@@ -25,7 +25,7 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
 1. Navigate back to **Microsoft Fabric** portal.
 
-1. To create a new Fabric data agent, first navigate to **fabric<inject key="DeploymentID" enableCopy="false"/> (1)** workspace created in previous lab, and then click on **+ New Item (2)** button. In the **All items** tab, search for **data agent (3)** to locate the appropriate option, then click on **Data agent (4)**
+1. To create a new Fabric data agent, first navigate to **fabric<inject key="DeploymentID" enableCopy="false"/> (1)** workspace created in the previous lab, and then click on **+ New Item (2)** button. In the **All items** tab, search for **data agent (3)** to locate the appropriate option, then click on **Data agent (4)**
 
     ![](../Images/L2T1S2-1806.png)
 
@@ -33,7 +33,7 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
     ![quota-check-output](../Images/lab1-49.png)
 
-    > **Note:** On the Welcome to data agent pop up window, click on **Skip for now**.
+    > **Note:** On the Welcome to data agent pop-up window, click on **Skip for now**.
 
 1. Click on **+ Add data (1)** from **Explorer**, then select **Data Source (2)** from the dropdown list 
 
@@ -65,10 +65,10 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
     ![quota-check-output](../Images/L2T1S9.png)
 
-1. Here are the few examples of prompts that you can try giving to the **Data Agent**.
+1. Here are a few examples of prompts that you can try giving to the **Data Agent**.
 
     ```
-    Provide me the total number of customers.
+    Provide me with the total number of customers.
     ```
 
     ![quota-check-output](../Images/L2T1S10.png)
@@ -76,7 +76,7 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 1. Try one more prompt to validate the agent's response.
 
     ```
-    Provide me the total number of orders in the last 6 months by region.
+    Provide me with the total number of orders in the last 6 months by region.
     ```
 
     ![quota-check-output](../Images/L2T1S11.png)
@@ -85,7 +85,7 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
 In this task, you will create a custom AI agent in Microsoft Copilot Studio, connect it to an existing Fabric data agent, and configure its behavior and orchestration settings. You will then publish the agent and make it available in Microsoft Teams to answer business questions using data from Microsoft Fabric.
 
-1. In a new tab, navigate to **Microsoft Copilot Studio** by copy-pasting the following URL into the address bar:
+1. In a new tab, navigate to **Microsoft Copilot Studio** by copying and pasting the following URL into the address bar:
 
    ```
    https://copilotstudio.microsoft.com/
@@ -102,14 +102,14 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![](../Images/L2T2S3.png)
 
-1. On the **Name your Agent** popup wizard, enter the following:
+1. On the **Name your Agent** pop-up wizard, enter the following:
 
     - Name your agent: **Adventure Work Sales Agent (1)**
     - Click on **Create (2)** 
 
         ![](../Images/L2T2S4.png)
 
-1. If you get a message a newer version of agent is available... click on **Refresh**.
+1. If you get a message that a newer version of the agent is available, click on **Refresh**.
 
     ![](../Images/L2T2S5-1806.png)
 
@@ -126,9 +126,9 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/LT2S6.png)
 
-1. You may see the prompt on the screen, **Setting up your copilot may take a while**, wait for sometime till your agent gets created.
+1. You may see the prompt on the screen, **Setting up your copilot may take a while**, wait for some time till your agent gets created.
 
-1. To add a Fabric data agent to your custom AI agent in Copilot Studio, choose **Adventure Work Sales Agent** created previously then navigate to **Agents (1)** from the top pane and then select **+ Add (2)** to add agents to your custom AI agent.
+1. To add a Fabric data agent to your custom AI agent in Copilot Studio, choose **Adventure Work Sales Agent** created previously, then navigate to **Agents (1)** from the top pane and then select **+ Add (2)** to add agents to your custom AI agent.
 
     ![quota-check-output](../Images/lab2-12.png)
 
@@ -164,7 +164,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![](../Images/L2T2S17-1806.png)
 
-    > **Note:** If the created agent page does not opens, navigate back to **Agents (1)** from the top pane. You should now see the **Fabric agent (2)** listed among the agents connected to the custom AI agent.
+    > **Note:** If the created agent page does not open, navigate back to **Agents (1)** from the top pane. You should now see the **Fabric agent (2)** listed among the agents connected to the custom AI agent.
 
     > ![quota-check-output](../Images/lab2-28.png)
 
@@ -186,7 +186,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![](../Images/L2T2S21-1806.png)
 
-1. Use the **Test (1)** chat pane available on the right-hand side to interact with the agent by asking sample questions. Click on **Allow (2)** in Fabric data agent after first interaction to the agent.
+1. Use the **Test (1)** chat pane available on the right-hand side to interact with the agent by asking sample questions. Click on **Allow (2)** in the Fabric data agent after the first interaction with the agent.
 
     ![quota-check-output](../Images/jan2026-chat-fabric-16.png)
 
@@ -238,7 +238,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
 1. This will launch Microsoft Teams, where you can interact with the custom AI agent by asking questions and receiving responses.
 
-1. In the **Adventure Work Sales Agent** agent chat window, type anything to get started, you will notice it will ask to Allow the fabric data agent to connect, choose **Allow**.
+1. In the **Adventure Work Sales Agent** agent chat window, type anything to get started. You will notice it will ask to Allow the fabric data agent to connect, choose **Allow**.
 
     ![quota-check-output](../Images/lab2-38.png)
 
@@ -250,7 +250,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-40.png)
 
-1. Once you have finished exploring the application, you can navigate back to your Codespace and delete the resources by running the following command, and providing **y** for the two prompts i.e **Total resources to delete: 12., are you sure you want to continue?** and **Would you like to permanently delete these resources instead allowing their names to be reused?**
+1. Once you have finished exploring the application, you can navigate back to your Codespace and delete the resources by running the following command, and providing **y** for the two prompts, i.e., **Total resources to delete: 12., are you sure you want to continue?** and **Would you like to permanently delete these resources instead allowing their names to be reused?**
 
    ```
    azd down
@@ -267,4 +267,6 @@ In this lab, you have completed:
 - Created and configured a Microsoft Fabric Data Agent
 - Implement and Validate an End-to-End Copilot Agent with Fabric Data Agent Integration
 
-## You have successfully completed the lab.
+### 🎉 You have successfully completed the lab.
+
+By completing this **Chat with your data Fabric** hands-on lab, you have successfully built and published an end-to-end AI-powered data experience using Microsoft Fabric and Microsoft Copilot Studio. You created and configured a Fabric Data Agent, connected it to a Lakehouse, integrated it with a custom Copilot agent, enabled dynamic orchestration and secure authentication, and published the solution to Microsoft Teams. You also validated the agent’s ability to answer natural language questions using enterprise data, demonstrating how Microsoft Fabric and AI can be combined to deliver intelligent, conversational analytics and business insights.
