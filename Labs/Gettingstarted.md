@@ -77,7 +77,7 @@ This lab showcases an end-to-end agentic AI solution using **Microsoft Fabric** 
 
 ## 🚀 Getting Started with the lab
 
-Welcome to your Chat with your data Fabric Workshop. Let's begin by making the most of this experience.
+Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
 ## 💻 Accessing Your Lab Environment
 
