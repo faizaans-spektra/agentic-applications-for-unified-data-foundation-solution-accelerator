@@ -2,8 +2,7 @@
 
 ## Overall Estimated Duration: 4 Hours
 
-
-## 🎯 Workshop Scenario
+## 📘 Workshop Scenario
 
 **Contoso Retail** is experiencing challenges in analyzing customer and sales performance data spread across multiple disconnected systems. **Sales analysts**, currently spend significant time collecting, consolidating, and validating data before meaningful insights can be generated.
 
@@ -84,7 +83,7 @@ Welcome to your Chat with your data Fabric Workshop. Let's begin by making the m
 
 Once the lab environment is ready, the virtual machine displayed on the left will be your primary workspace for completing the exercises, while the **Guide** on the right side provides step-by-step instructions for each task.
 
-![](../Images/march-update-lab1-1.png)
+![](../Images/guide-1806.png)
 
 
 ##  Lab Guide Zoom In/Zoom Out
@@ -138,13 +137,10 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
    ![Stay Signed in](../Images/03.png)   
 
-1. If the **Welcome to Microsoft Teams!** window appears, close it to proceed.
 
-   ![Stay Signed in](../Images/march-update-lab1-13.png)
+## 📞 Support Contact
 
-## Support Contact
-
-The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+The **CloudLabs support team** is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
 
 Learner Support Contacts:
 

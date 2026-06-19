@@ -2,7 +2,7 @@
 
 ## Estimated Duration: 120 Minutes
 
-## 🎯 Lab Scenario 
+## 📘 Lab Scenario 
 
 Contoso Retail wants to simplify how users explore and analyze enterprise sales data spread across multiple systems. To address this challenge, the organization is implementing the **Agentic Applications for Unified Data Foundation Solution Accelerator using Microsoft Fabric and AI-powered agents**.
 
@@ -47,17 +47,19 @@ In this task, you will create a workspace in **Microsoft Fabric**, to organize a
 
     ![](../Images/lab1-3.png)
 
-1. On the Fabric portal, **Welcome to the Fabric view** dialog pops up then click on **Cancel**.
+1. Click on **Power BI (1)** from the bottom left corner and select Fabric (2).
 
-    ![](../Images/lab1-92.png)
+   ![tour](../Images/L1T1S6a-1806.png)
 
-1. You will be navigated to the **Microsoft Fabric Home page**.
-
-   ![tour](../Images/jan26-lab1-1.png)
+   ![tour](../Images/L1T1S6b-1806.png)
 
    >**Note:** If you receive any pop-ups, please **Close** them.
 
-   ![tour](../Images/lab1-94.png)
+   > ![tour](../Images/lab1-94.png)
+
+1. On the Fabric portal, **Welcome to the Fabric view** dialog pops up then click on **Cancel**.
+
+    ![](../Images/lab1-92.png)
 
 1. Now, let's create a workspace with a **Fabric** license. Select **Workspaces** **(1)** from the left navigation bar. Click on **+ New workspace (2)** found at the bottom of the pop-out menu.
 
@@ -102,11 +104,14 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
    https://www.github.com/login
    ```
 
-1. You will be redirected to **Sign in to GitHub** page, and enter the **<inject key="GitHub User Name" enableCopy="true"/>** **(1)** and click on **Sign in with your identity provider (2)**.
+1. You will be redirected to **Sign in to GitHub** page. 
 
-    ![](../Images/GS1.png)
+    - Enter the following Username **<inject key="GitHub User Name" enableCopy="true"/>** **(1)** 
+    - Click on **Sign in with your identity provider (2)**.
 
-    >**Important:** After entering the **GitHub User Name**, ensure you click **Sign in with your identity provider**. Do not enter password, as the CloudLabs GitHub account is provisioned through your organization's identity provider and standard password login is not supported.
+        ![](../Images/GS1.png)
+
+        >**Important:** After entering the **GitHub User Name**, ensure you click **Sign in with your identity provider**. Do not enter password, as the CloudLabs GitHub account is provisioned through your organization's identity provider and standard password login is not supported.
 
 1. You will be redirected to Single sign-on to **CloudLabs Organizations**, click on **Continue**.
 
@@ -124,9 +129,9 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
         ![](../Images/GSpwd.png)
 
-1. If you see the pop-up **Stay Signed in?**, select **Yes**.
+1. On the **Permissions requested by** window, select **Accept**.
 
-    ![](../Images/GSno.png)
+    ![](../Images/L1T2S7-1806.png)
 
 1. Navigate to the repository in a web browser.
 
@@ -136,23 +141,27 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
 1. Click on the green **Use this template** button.
 
-   ![](../Images/chat-with-data-fabric-SSO-1.png)
+   ![](../Images/L1T2S9-1806.png)
 
-1. You should see a repository creation form. Make the following selections :
+1. You should see a repository creation form. Make the following selections:
 
-   - **Owner:** Select **Cloudlabs-Enterprises (1)**
+   - On the Start with a template, keep the default template **(1)** selected. 
 
-   - **Repository name:** Enter the name **agentic-applications-for-unified-data-foundation-solution-accelerator-<inject key="DeploymentID" enableCopy="false"/> (2)**
+   - **Owner:** Select **Cloudlabs-Enterprises (2)**
 
-   - **Visibility:** Choose **Internal (3)**.
+   - **Repository name:** Enter the name **agentic-applications-for-unified-data-foundation-solution-accelerator-<inject key="DeploymentID" enableCopy="false"/> (3)**
+
+   - **Visibility:** Choose **Internal (4)**.
    
-   - Scroll down and then click **Create repository (4)**.
+   - Scroll down and then click **Create repository (5)**.
   
-     ![](../Images/chat-with-data-fabric-SSO-2.png)
+     ![](../Images/L1T2S10a-1806.png)
+
+     ![](../Images/L1T2S10b-1806.png)
 
 1. Once your repository has been successfully created, you will be redirected to its home page. From there, click **Code (1)**, navigate to the **Codespaces (2)** tab, and then select **Create codespace on main (3)** to launch your Codespace.
 
-   ![](../Images/chat-with-data-fabric-SSO-3.png)
+   ![](../Images/L1T2S11-1806.png)
 
 1. Wait for the **Codespace** wizard to be setup, it would ideally take 2-5 minutes for codespace to get ready.
 
@@ -166,11 +175,11 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
     azd auth login
     ```
 
-      ![The `New Repository` creation form in GitHub.](../Images/lab1-16.png "New Repository Creation Form")
+      ![](../Images/lab1-16.png)
 
-    > **Note:** If you see the option to Allow the copy to clipboard option, choose **Allow**.
+    > **Note:** If you get the option to Allow the copy to clipboard option, choose **Allow**.
 
-     ![](../Images/lab1-22.png)
+    > ![](../Images/lab1-22.png)
 
 1. On the **Enter code to allow access** wizard, provide the code copied in the previous step **(1)** and choose **Next (2)**.
 
@@ -212,23 +221,26 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     | Prompt                                                                   | Action                                                                     |
     | ------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+    |  **Would you like to check your Azure development tools?**    | Type **no**. (As the required tools are already installed in the lab environment)
     | **Enter a unique Environment name**                                      | Enter **fabricapp** and press **Enter**.                                   |
-    | **Subscription selection**                                                   | Type **1** and press **Enter** to select the default subscription.         |
+    | **Subscription selection**                                                   | Press **Enter** to select the default subscription.         |
     | **Location selection**                                                      | Use the up/down arrow keys to select **East US 2**, then press **Enter**.  |
     | **Enter a value for the 'backendRuntimeStack' infrastructure parameter** | You will see two options to choose the programming language for the backend API: **python**/**dotnet**. Select **dotnet** and press **Enter**.                               |
-    | **Enter a value for the 'usecase' infrastructure parameter**             | Likewise you will see two options for usecase: **Retail-sales-analysis**/**Insurance-improve-customer-meetings**. Select **Retail-sales-analysis** and press **Enter**.                     |
+    | **Enter a value for the 'usecase' infrastructure parameter**             | You will see two options for usecase: **Retail-sales-analysis**/**Insurance-improve-customer-meetings**. Select **Retail-sales-analysis** and press **Enter**.                     |
     | **Resource group selection**                                                 | Keep the cursor on **1. Create a new resource group** and press **Enter**. |
     | **Resource group location**                                                  | Use the up/down arrow keys to select **East US 2**, then press **Enter**.  |
     | **Enter a name for the new resource group**                              | Enter **rg-fabricapp** and press **Enter**.                                |
+
+    ![](../Images/L1T2S21-1806.png)
 
 1. This deployment can take upto **7-10 minutes** to provision the resources in your account and set up the solution with sample data.
 
     > **Note:** If you encounter an error or timeout during deployment, changing the location may help, as there could be availability constraints for the resources.
     Execute the command below to clear the saved session data, then try using any of the other regions listed below. Here are some example regions where the services are available: **East US2, Australia East, UK South, France Central.**
 
-    ```Shell
-    rm -rf .azure
-    ```
+   > ```Shell
+   > rm -rf .azure
+   > ```
     
 1. Once the deployment has completed successfully:
 
@@ -244,15 +256,15 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
     bash ./infra/scripts/agent_scripts/run_create_agents_scripts.sh
     ```
 
-1. After the script execution completes, click on the **authentication URL (1)** displayed in the output along with the **generated code (2)**.
+1. After the script execution completes, click on the **authentication URL (1)** displayed in the output and copy the **generated code (2)**.
 
     ![The `New Repository` creation form in GitHub.](../Images/lab1-101.png "New Repository Creation Form")
 
     >**Note:** Also you can provide the link below into the new browser tab if you are having any issues in accessing the URL.
 
-    ```Shell
-    https://microsoft.com/devicelogin
-    ```
+    > ```Shell
+    > https://microsoft.com/devicelogin
+    > ```
 1. A new window **Enter code to allow access** will open in the browser, provide the code copied in the previous step and choose **Next**.
 
      ![The `New Repository` creation form in GitHub.](../Images/lab1-29.png "New Repository Creation Form")
@@ -285,15 +297,15 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     ![](../Images/jan2026-chat-fabric-6.png)
 
-1. If you want to switch the **backendRuntimeStack** (for example, from **Python to .NET or vice versa**), or switch the previously used **use case** (from **Retail-sales-analysis to Insurance-improve-customer-meetings or vice versa**), you must first run the two cleanup commands. After cleanup, repeat the steps starting from Task 3, Step 21.
+> **INFORMATION:** If you want to switch the **backendRuntimeStack** (for example, from **Python to .NET or vice versa**), or switch the previously used **use case** (from **Retail-sales-analysis to Insurance-improve-customer-meetings or vice versa**), you must first run the two cleanup commands. After cleanup, repeat the steps starting from Task 3, Step 21.
 
-    ```Shell
-    azd down
-    ```
+> ```Shell
+> azd down
+> ```
 
-    ```Shell
-    rm -rf .azure
-    ```
+> ```Shell
+> rm -rf .azure
+> ```
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task.
@@ -308,22 +320,28 @@ In this task, you will enable authentication for the Azure App Service by adding
 
 1. Now let's navigate to the **Azure Portal**. Search for **App services** in azure portal and select it.
 
-    ![](../Images/lab1-43.png)
+    ![](../Images/L1T3S1-1806.png)
 
-1. On **App Services** page, you will see two app services are in running state. Select the app service named **app-xxxxxxx**.
+2. On **App Services** page, you will see two app services are in running state. Select the app service named **app-xxxxxxx**.
 
     ![](../Images/lab1-42.png)
 
-1. Navigate to **Authentication (1)** from left menu under **Settings**. Then, click on **Add identity provider (2)** to see a list of identity providers.
+3. Navigate to **Authentication (1)** from left menu under **Settings**. Then, click on **Add identity provider (2)** to see a list of identity providers.
 
     ![](../Images/lab1-39.png)
 
-3. On **Add an Identity Provider** page, Click on **Identity Provider** dropdown to see a list of identity providers. Select the first option **Microsoft (1)**
+4. On **Add an Identity Provider** page, Click on **Identity Provider** dropdown to see a list of identity providers. Select the first option **Microsoft (1)**
 from the drop-down list.
 
-4. Keep **App registration type** as **Create new app registration (2)**. Provide the name of App registration as  **fabric-app-<inject key="DeploymentID" enableCopy="false"/> (3)**. In **client secret expiration** under **App registration** choose **Recommended 180 days (4)**. Accept the default values and click on **Add (5)** button to go back to the previous page with the identity provider added.
+5. Select the following details: 
 
-    ![](../Images/lab1-40.png)
+    - Choose a tenant for your application and its users: **Workforce configuration (current tenant) (2)**
+    - App registration type: **Create new app registration (3)**
+    - Name: **fabric-app-<inject key="DeploymentID" enableCopy="false"/> (4)**
+    - Client secret expiration: **Recommended 180 days (5)**
+    - Click on Add (6)
+
+        ![](../Images/L1T3S5-1806.png)
 
 6. You have successfully added app authentication and now required to log in to access the application.
 
@@ -337,9 +355,14 @@ from the drop-down list.
 
     >**Note:** If the web application prompts for login, use the same Azure credentials you used earlier, i.e.
 
-     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    > - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-     - **Password:** <inject key="AzureAdUserPassword"></inject>
+    > - **Password:** <inject key="AzureAdUserPassword"></inject>
+
+
+1. The app will look like this 
+
+    ![](../Images/L1T3S9-1806.png)
 
 ## Task 4: Testing the application
 
@@ -361,7 +384,7 @@ To help you get started, here are some **Sample Questions** you can ask in the a
 
 These questions serve as a great starting point to explore insights from the data.
 
-## Summary
+## 🧾 Summary
 
 In this lab, you have completed:
 
@@ -370,6 +393,6 @@ In this lab, you have completed:
 - Set Up Authentication in Azure App Service
 - Tested the application
 
-## You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
+### You have successfully completed the Lab. Click on Next >> to proceed with the next.
 
 ![](../Images/nextpage.png)

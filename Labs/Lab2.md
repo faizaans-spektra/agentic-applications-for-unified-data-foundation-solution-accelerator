@@ -2,7 +2,7 @@
 
 ## Estimated Duration: 120 Minutes
 
-## 🎯 Lab Scenario
+## 📘 Lab Scenario
 
 Contoso Retail wants to modernize its data platform by building a **unified and governed analytics foundation using Microsoft Fabric**. The organization needs to consolidate customer, product, and sales data from multiple systems to enable efficient data processing, reporting, and business analysis.
 
@@ -27,18 +27,23 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
 1. To create a new Fabric data agent, first navigate to **fabric<inject key="DeploymentID" enableCopy="false"/> (1)** workspace created in previous lab, and then click on **+ New Item (2)** button. In the **All items** tab, search for **data agent (3)** to locate the appropriate option, then click on **Data agent (4)**
 
-    ![quota-check-output](../Images/march-update-lab1-5.png)
+    ![](../Images/L2T1S2-1806.png)
 
 1. On the **Create data agent** wizard, provide **fabric-agent (1)** as the name for your **Fabric data agent** and click on **Create (2)** button.
 
     ![quota-check-output](../Images/lab1-49.png)
+
+    > **Note:** On the Welcome to data agent pop up window, click on **Skip for now**.
 
 1. Click on **+ Add data (1)** from **Explorer**, then select **Data Source (2)** from the dropdown list 
 
     ![quota-check-output](../Images/cwd1.png)
     
 1. Select the **retail_lakehouse_xxxxxxx (1)** of **Lakehouse** type, then click on **Add (2)**. 
+    
     ![quota-check-output](../Images/lab2-1.png)
+
+    > **Note:** It may take a minute for the data to be available. 
 
 1. On the **Data Agent > Explorer** pane, for now we will select **all tables (3)**.
 
@@ -46,7 +51,7 @@ In this task, you will create and publish a Microsoft Fabric Data Agent within a
 
 1. Click on **Publish** from the toolbar to publish the data agent.
 
-    ![quota-check-output](../Images/jan2026-chat-fabric-9.png)
+    ![quota-check-output](../Images/L2T1S7-1806.png)
 
 1. On the **Publish data agent** popup wizard, add the **Description (1)** of agent and then click on **Publish (2)**:
 
@@ -87,19 +92,26 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
    ```
 1. If you see this page, then select Country/region as **United States (1)** and click on **Get started (2)**.
 
-    ![quota-check-output](../Images/lab1-56.png)
+    ![](../Images/lab1-56.png)
 
     > **Note:** If you see the pop up **What's new in Copilot Studio** choose **Got it.**
 
-    ![quota-check-output](../Images/lab2-7.png)
+    > ![](../Images/lab2-7.png)
 
 1. On the left pane, select **Agents (1)**, then click on **+ Create blank agent (2)** to start building your custom AI agent.
 
-    ![quota-check-output](../Images/L2T2S3.png)
+    ![](../Images/L2T2S3.png)
 
-1. On the **Name your Agent** popup wizard, Enter the name of your agent as **Adventure Work Sales Agent (1)**  and click on **Create (2)**.
+1. On the **Name your Agent** popup wizard, enter the following:
 
-    ![quota-check-output](../Images/L2T2S4.png)
+    - Name your agent: **Adventure Work Sales Agent (1)**
+    - Click on **Create (2)** 
+
+        ![](../Images/L2T2S4.png)
+
+1. If you get a message a newer version of agent is available... click on **Refresh**.
+
+    ![](../Images/L2T2S5-1806.png)
 
 1. Wait for the Agent to finish setting up, then from the **Details** section, click on **Edit**.
 
@@ -140,8 +152,6 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-17.png)
 
-    > **Note:** If there's already a connection between Microsoft Fabric and the custom AI agent, you can select **Next** and move to next step.
-
 1. From the available list of Fabric data agents you have access to, select the data agent you want to connect to the custom AI agent in Copilot Studio. For this lab, choose **fabric-agent (1)** that you created earlier, then select **Next (2)**. The selected data agent will work in conjunction with the custom AI agent to support and execute the required workflows.
 
     ![quota-check-output](../Images/lab2-18.png)
@@ -150,13 +160,17 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-27.png)
 
-1. After completing the setup, navigate back to **Agents (1)** from the top pane. You should now see the **Fabric data agent (2)** listed among the agents connected to the custom AI agent.
+1. After completing the setup, the fabric-agent page will open
 
-    ![quota-check-output](../Images/lab2-28.png)
+    ![](../Images/L2T2S17-1806.png)
 
-1. Select the connected Fabric data agent. Navigate to **Details (1)** > **Additional details (2)**. Under authentication method, select **End-user credentials (3)**. The required permissions are already in place, so no additional configuration is needed.
+    > **Note:** If the created agent page does not opens, navigate back to **Agents (1)** from the top pane. You should now see the **Fabric agent (2)** listed among the agents connected to the custom AI agent.
 
-    ![quota-check-output](../Images/cwd8.png)
+    > ![quota-check-output](../Images/lab2-28.png)
+
+1. From the **Details (1)** tab, expand **Additional details (2)**. Under Credentials to use, select **End-user credentials (3)**. The required permissions are already in place, so no additional configuration is needed.
+
+    ![](../Images/L2T2S18-1806.png)
 
 1. Verify that generative AI orchestration is enabled. To do this, select **Settings** at the top of the chat pane, then under Orchestration, choose the **Yes - Responses will be dynamic, using available tools and knowledge as appropriate** option.
 
@@ -168,11 +182,15 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/cwd14.png)
 
+1. Close the Settings page. 
+
+    ![](../Images/L2T2S21-1806.png)
+
 1. Use the **Test (1)** chat pane available on the right-hand side to interact with the agent by asking sample questions. Click on **Allow (2)** in Fabric data agent after first interaction to the agent.
 
     ![quota-check-output](../Images/jan2026-chat-fabric-16.png)
 
-1. Review the responses to verify that the custom AI agent is correctly engaging the connected Fabric data agents and refine its behavior as needed.
+1. Ask the question again and review the responses to verify that the custom AI agent is correctly engaging the connected Fabric data agents and refine its behavior as needed.
 
     ![quota-check-output](../Images/lab2-41.png)
 
@@ -232,7 +250,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
     ![quota-check-output](../Images/lab2-40.png)
 
-1. Once you have finished exploring the application, you can delete the resources by running the following command, and providing **y** for the two prompts i.e **Total resources to delete: 12., are you sure you want to continue?** and **Would you like to permanently delete these resources instead allowing their names to be reused?**
+1. Once you have finished exploring the application, you can navigate back to your Codespace and delete the resources by running the following command, and providing **y** for the two prompts i.e **Total resources to delete: 12., are you sure you want to continue?** and **Would you like to permanently delete these resources instead allowing their names to be reused?**
 
    ```
    azd down
@@ -242,7 +260,7 @@ In this task, you will create a custom AI agent in Microsoft Copilot Studio, con
 
 1. Running this step will permanently delete all Azure resources created during the setup.
 
-## Summary
+## 🧾 Summary
 
 In this lab, you have completed:
 
