@@ -23,15 +23,15 @@ You will be able to complete the following tasks:
 
 ## Task 1: Create a workspace and link with Fabric Copilot-enabled capacity
 
-In this task, you will create a workspace in **Microsoft Fabric**, to organize and manage your data and analytics assets. The workspace will be linked to a Copilot-enabled capacity, providing access to AI-powered features such as natural language queries and intelligent data insights.
+In this task, you will create a workspace in **Microsoft Fabric** to organize and manage your data and analytics assets. The workspace will be linked to a Copilot-enabled capacity, providing access to AI-powered features such as natural language queries and intelligent data insights.
 
-1. Within the Lab VM, in a new tab navigate to **Microsoft Fabric** by copy-pasting the following URL into the address bar:
+1. Within the Lab VM, in a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
 
    ```
    https://app.fabric.microsoft.com/home
    ```
 
-2. On the **Enter your email, we'll check if you need to create a new account** wizard, you will see the login screen, in that enter the following **Email(1)**, and click on **Submit (2)**.
+2. On the **Enter your email, we'll check if you need to create a new account** wizard, you will see the login screen, in which you enter the following **Email(1)**, and click on **Submit (2)**.
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
@@ -88,7 +88,7 @@ In this task, you will create a workspace in **Microsoft Fabric**, to organize a
 
      ![](../Images/lab1-8.png)
 
-1. Copy the **Workspace ID** from the link and keep it in notepad, as we will need it upcoming tasks to deploy the Azure infrastructure through Bicep templates.
+1. Copy the **Workspace ID** from the link and keep it in Notepad, as we will need it for upcoming tasks to deploy the Azure infrastructure through Bicep templates.
 
 ## Task 2: Deploy Azure infrastructure via the provided Bicep templates
 
@@ -111,7 +111,7 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
         ![](../Images/GS1.png)
 
-        >**Important:** After entering the **GitHub User Name**, ensure you click **Sign in with your identity provider**. Do not enter password, as the CloudLabs GitHub account is provisioned through your organization's identity provider and standard password login is not supported.
+        >**Important:** After entering the **GitHub User Name**, ensure you click **Sign in with your identity provider**. Do not enter a password, as the CloudLabs GitHub account is provisioned through your organization's identity provider, and standard password login is not supported.
 
 1. You will be redirected to Single sign-on to **CloudLabs Organizations**, click on **Continue**.
 
@@ -163,7 +163,7 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
    ![](../Images/L1T2S11-1806.png)
 
-1. Wait for the **Codespace** wizard to be setup, it would ideally take 2-5 minutes for codespace to get ready.
+1. Wait for the **Codespace** wizard to be set up; it would ideally take 2-5 minutes for Codespace to get ready.
 
       ![The `New Repository` creation form in GitHub.](../Images/lab1-15.png "New Repository Creation Form")
 
@@ -189,7 +189,7 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
       ![The `New Repository` creation form in GitHub.](../Images/lab1-30.png "New Repository Creation Form")
 
-    > **Note:** If you are not logged into azure yet or using private window, choose **Use another account** and use the following credentials to login in.
+    > **Note:** If you are not logged into Azure yet or using a private window, choose **Use another account** and use the following credentials to log in.
     - You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
 
         - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
@@ -200,15 +200,15 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
             ![](../Images/GSpwd.png)
 
-1. You will see the pop up window, **Are you trying to sign in to Microsoft Azure CLI?**, click on **Continue**.
+1. You will see the pop-up window, **Are you trying to sign in to Microsoft Azure CLI?**, click on **Continue**.
 
     ![](../Images/lab1-19.png)
 
-1. You will see the pop up window confirming the sign in as **You have signed in to the Microsoft Azure Cross-platform Command Line Interface application on your device.**
+1. You will see the pop-up window confirming the sign-in as **You have signed in to the Microsoft Azure Cross-platform Command Line Interface application on your device.**
 
     ![](../Images/lab1-20.png)
 
-1. Navigate to the browser where codespace is created, you will notice the output that you are logged in as **Azure user**.
+1. Navigate to the browser where Codespace is created, and you will notice the output that you are logged in as the **Azure user**.
 
     ![](../Images/lab1-21.png)
 
@@ -233,7 +233,7 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     ![](../Images/L1T2S21-1806.png)
 
-1. This deployment can take upto **7-10 minutes** to provision the resources in your account and set up the solution with sample data.
+1. This deployment can take up to **7-10 minutes** to provision the resources in your account and set up the solution with sample data.
 
     > **Note:** If you encounter an error or timeout during deployment, changing the location may help, as there could be availability constraints for the resources.
     Execute the command below to clear the saved session data, then try using any of the other regions listed below. Here are some example regions where the services are available: **East US2, Australia East, UK South, France Central.**
@@ -260,12 +260,12 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     ![The `New Repository` creation form in GitHub.](../Images/lab1-101.png "New Repository Creation Form")
 
-    >**Note:** Also you can provide the link below into the new browser tab if you are having any issues in accessing the URL.
+    >**Note:** Also, you can provide the link below in a new browser tab if you are having any issues accessing the URL.
 
     > ```Shell
     > https://microsoft.com/devicelogin
     > ```
-1. A new window **Enter code to allow access** will open in the browser, provide the code copied in the previous step and choose **Next**.
+1. A new window **Enter code to allow access** will open in the browser, provide the code copied in the previous step, and choose **Next**.
 
      ![The `New Repository` creation form in GitHub.](../Images/lab1-29.png "New Repository Creation Form")
 
@@ -273,11 +273,11 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     ![The `New Repository` creation form in GitHub.](../Images/lab1-30.png "New Repository Creation Form")
 
-1. You will see the pop up window, **Are you trying to sign in to Microsoft Azure CLI?**, choose **Continue**.
+1. You will see the pop-up window, **Are you trying to sign in to Microsoft Azure CLI?**, choose **Continue**.
 
     ![](../Images/lab1-19.png)
 
-1. You will see the pop up window confirming the sign in as **You have signed in to the Microsoft Azure Cross-platform Command Line Interface application on your device.**
+1. You will see the pop-up window confirming the sign-in as **You have signed in to the Microsoft Azure Cross-platform Command Line Interface application on your device.**
 
     ![](../Images/lab1-20.png)
 
@@ -285,9 +285,9 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
     ![](../Images/lab1-31.png)
 
-1. Now that the bash script is executed, through this script you have automated the AI agent setup process by validating Azure access, assigning the required Azure AI permissions, creating the AI agents, and updating the App Service configuration with the generated agent details.
+1. Now that the bash script is executed, through this script, you have automated the AI agent setup process by validating Azure access, assigning the required Azure AI permissions, creating the AI agents, and updating the App Service configuration with the generated agent details.
 
-1. Run the bash script from the output of the azd deployment. Replace the **fabric-workspaceId** with your Fabric workspace Id created in the **Task 1 Step 13**. The script will look like the following:
+1. Run the bash script from the output of the azd deployment. Replace the **fabric-workspaceId** with your Fabric workspace ID created in the **Task 1 Step 13**. The script will look like the following:
 
     ```Shell
     bash ./infra/scripts/fabric_scripts/run_fabric_items_scripts.sh <fabric-workspaceId>
@@ -318,11 +318,11 @@ In this task, you will authenticate to **GitHub**, then use **GitHub Codespaces 
 
 In this task, you will enable authentication for the Azure App Service by adding Microsoft as an identity provider, creating a new app registration, and validating secure user sign-in through the app’s default domain.
 
-1. Now let's navigate to the **Azure Portal**. Search for **App services** in azure portal and select it.
+1. Now let's navigate to the **Azure Portal**. Search for **App services** in the Azure portal and select it.
 
     ![](../Images/L1T3S1-1806.png)
 
-2. On **App Services** page, you will see two app services are in running state. Select the app service named **app-xxxxxxx**.
+2. On the **App Services** page, you will see that two app services are running. Select the app service named **app-xxxxxxx**.
 
     ![](../Images/lab1-42.png)
 
@@ -343,13 +343,13 @@ from the drop-down list.
 
         ![](../Images/L1T3S5-1806.png)
 
-6. You have successfully added app authentication and now required to log in to access the application.
+6. You have successfully added app authentication and are now required to log in to access the application.
 
-1. Navigate to **Overview** of the app service, select the default domain to open the web app in different tab of the browser.
+1. Navigate to **Overview** of the app service, select the default domain to open the web app in a different tab of the browser.
 
     ![](../Images/lab1-46.png)
 
-1. You will see Permission requested tab, choose **Accept** to login in using the same user used to logged into Azure.
+1. You will see the Permission requested tab. Choose **Accept** to log in using the same user used to log in to Azure.
 
     ![](../Images/lab1-41.png)
 
@@ -370,11 +370,11 @@ In this task, you will validate the deployed application by submitting natural l
 
 To help you get started, here are some **Sample Questions** you can ask in the app:
 
-- Show total revenue by year for last 5 years as a line chart.
+- Show total revenue by year for the last 5 years as a line chart.
 
     ![Add Provider](../Images/lab1-35.png)
 
-- Show top 10 products by Revenue in the last year in a table.
+- Show the top 10 products by Revenue in the last year in a table.
 
     ![Add Provider](../Images/lab1-36.png)
 
@@ -388,7 +388,7 @@ These questions serve as a great starting point to explore insights from the dat
 
 In this lab, you have completed:
 
-- Created a fabric workspace and link with Fabric Copilot-enabled capacity
+- Created a fabric workspace and linked with Fabric Copilot-enabled capacity
 - Deployed Azure infrastructure via the provided Bicep templates
 - Set Up Authentication in Azure App Service
 - Tested the application
